@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import React from 'react'
 
 const Page = dynamic(
   () => import('../lib/page'),
   { ssr: false }
 )
 
-
-export default function Home() {
+export default function Home () {
   return (
     <div className="container">
       <Head>

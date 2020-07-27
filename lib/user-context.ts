@@ -7,3 +7,8 @@ export interface TUserContext {
 export const UserContext = React.createContext<TUserContext>({
   isAuthenticated: false
 })
+
+export interface TUser {
+  name: string
+  email: string
+}

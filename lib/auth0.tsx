@@ -72,6 +72,10 @@ export const Auth0Provider = ({
     setIsAuthenticated(true)
     setUser(user)
   }
+  if (loading) {
+    return <span>Loading...</span>
+  }
+
   return (
     <Auth0Context.Provider
       value={{
